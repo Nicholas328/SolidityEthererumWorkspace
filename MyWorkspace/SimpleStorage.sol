@@ -53,9 +53,8 @@ contract SimpleStorage{
     }
 
     //保存Number
-    function storeNum(uint256 _favouriteNumber) public {
+    function storeNum(uint256 _favouriteNumber) public virtual{
         favouriteNumber = _favouriteNumber;
-        favouriteNumber++;
     }
 
     /*  
