@@ -7,9 +7,65 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -73,12 +129,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"FundPractise/FundMe.sol": {
-			"keccak256": "0x6cf09433d120ab118d602df6965aeae334efac82e8b416b7fe3aa385de17fbcc",
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8b00a45c3072e84a5e8af2dbbf035ec5c7c4ffa0e7198b73de082328f04692dd",
-				"dweb:/ipfs/QmVuUijSW9QeWsXP1DHQHRAucr7fts6G84UTQgDhrbuBhD"
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"FundPractise/FundMe.sol": {
+			"keccak256": "0x04206d1c0a825c833f2fef5fde4e18447429618a6ba56a00d59ee2bda1fc298b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e30aa073ccf8d35fc5219250e0630a9d975ade4be1eda821274b44785f6d100",
+				"dweb:/ipfs/Qmae4PwwByFWvVr1gr1NQNqyRgYrwNPtP5NLMci6zkWquk"
+			]
+		},
+		"FundPractise/PriceConverter.sol": {
+			"keccak256": "0x0ab689f96100e0b1691add867b3634d943f03a5ea35a207992a27c308062bf8a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://606f1ce384dc226a5679f2be8e5d76da1e683ba9b83fcb8ffaa0470d6c1909a3",
+				"dweb:/ipfs/QmXck4Pzunkc9gVUSqSfJxSnefe7srftdZAUeTiXqxM696"
 			]
 		}
 	},
